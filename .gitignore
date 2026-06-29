@@ -11,6 +11,9 @@ __pycache__/
 *.pyo
 python/runs/
 
+# Documentation (not for public repo)
+文档/
+
 # OS
 .DS_Store
 Thumbs.db
