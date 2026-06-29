@@ -1,0 +1,25 @@
+﻿/**
+ ****************************************************************************************************
+ * @file        bsp_bus.h
+ * @version     V1.0
+ * @date        2025-01-13
+ * @brief       BUS驱动文件
+ ****************************************************************************************************
+ * @attention
+ * 
+ * 
+ ****************************************************************************************************
+ */
+
+#ifndef __BSP_BUS_H
+#define __BSP_BUS_H
+
+#include "stm32n6xx_hal.h"
+
+int32_t bsp_i2c2_init(void);
+int32_t bsp_i2c2_deinit(void);
+int32_t bsp_i2c2_write_reg16(uint16_t address, uint16_t reg, uint8_t *data, uint16_t length);
+int32_t bsp_i2c2_read_reg16(uint16_t address, uint16_t reg, uint8_t *data, uint16_t length);
+int32_t bsp_bus_get_tick(void);
+
+#endif

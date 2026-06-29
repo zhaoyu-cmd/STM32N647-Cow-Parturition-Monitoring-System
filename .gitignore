@@ -1,0 +1,20 @@
+# STM32CubeIDE build artifacts (Debug ~300MB, must exclude)
+**/Debug/
+**/Release/
+
+# Large compiled binary artifact (derived from model, ~30MB)
+Cow Parturition Monitoring System/Binary/network-data.hex
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+python/runs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# STM32CubeIDE workspace metadata
+.metadata/
+RemoteSystemsTempFiles/
